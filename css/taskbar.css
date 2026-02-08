@@ -1,0 +1,48 @@
+
+.taskbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    min-height: 40px;
+    bottom: 0;
+    left: 0;
+    background-color: #1d203000;
+    backdrop-filter: blur(10px) brightness(60%);
+    z-index: 100;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.taskbar #taskbar-app-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.taskbar #taskbar-app-area .taskbar-app {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    background-color: black;
+}
+
+.taskbar #taskbar-info-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    user-select: none;
+}
